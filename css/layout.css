@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #00796b;
+}
+
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0f7fa;
+    padding: 20px;
+}
+
+.item {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Seção 4: Flexbox básico */
+.responsive-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eceff1;
+    padding: 20px;
+}
+
+.responsive-container .item {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .responsive-container .item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Seção 5: Centralizando um item */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #ffeb3b;
+}
+
+.center-item {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Seção 6: Alinhamento simples */
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px;
+    background-color: #c8e6c9;
+    padding: 20px;
+}
+
+.flex-item {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Seção 7: Usando gap para espaçamento */
+.gap-container {
+    display: flex;
+    gap: 20px;
+    background-color: #ffccbc;
+    padding: 20px;
+}
+
+.gap-item {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .container-flex,
+    .responsive-container,
+    .center-container,
+    .flex-container,
+    .gap-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-flex .item,
+    .responsive-container .item,
+    .flex-container .flex-item,
+    .gap-container .gap-item {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+footer button {
+    background-color: #00796b;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}

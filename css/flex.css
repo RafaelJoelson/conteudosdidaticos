@@ -1,0 +1,147 @@
+/* Reset de margem e padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do contêiner da página */
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #35295f;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Seção 1 - Contêiner inline-flex */
+.section-1 {
+    background-color: #e8eaf6;
+}
+
+.section-1 .container-inline-flex {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.section-1 .item {
+    background-color: #35295f;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Seção 2 - Inline-flex com texto */
+.section-2 {
+    background-color: #fff;
+}
+
+.section-2 .inline-text {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #35295f;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+.section-2 .item-text {
+    background-color: lightblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Seção 3 - Inline-flex com ícones */
+.section-3 {
+    background-color: #e0f7fa;
+}
+
+.section-3 .container-inline-flex {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #00796b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-3 .item {
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .container-inline-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-1 .container-inline-flex {
+        flex-direction: column;
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+footer button {
+    background-color: #00796b;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
